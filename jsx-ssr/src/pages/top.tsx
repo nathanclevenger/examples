@@ -10,12 +10,12 @@ type Props = {
 
 export const Top = (props: Props) => {
   return (
-    <div>
+    <div class="flex flex-col max-w-7xl justify-center prose">
       <Helmet>
         <title>Top</title>
       </Helmet>
       <Header />
-      <main>
+      <main class="items-center w-full flex-1 px-20 text-center">
         <h2>Posts</h2>
         {props.posts}
         <ul>
